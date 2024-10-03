@@ -1,0 +1,28 @@
+﻿<Window x:Class="ApplicationNotepad.NotepadView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ApplicationNotepad"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Height="450" 
+        Width="800"
+        Title="NotepadView">
+    <Grid>
+        
+        <TextBox x:Name="txtEditor" 
+                 VerticalScrollBarVisibility="Auto"
+                 HorizontalScrollBarVisibility="Auto"
+                 TextWrapping="Wrap" 
+                 Margin="10" 
+                 AcceptsReturn="True" 
+                 FontSize="14" />
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10">
+            <Button Content="Abrir" Width="75" Margin="0,0,10,0" Click="ButtonOpen_Click" />
+            <Button Content="Salvar" Width="75" Click="ButtonSave_Click" />
+        </StackPanel>
+        
+    </Grid>
+</Window>
